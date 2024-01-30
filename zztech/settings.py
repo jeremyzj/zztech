@@ -24,8 +24,6 @@ SECRET_KEY = 'django-insecure-svsa-z^mdw7y*jw7i%xs)-$hd^cuxc4hgk*_v&5s$+2w3ysx08
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
-
 
 # Application definition
 
@@ -121,3 +119,9 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+ALLOWED_HOSTS = [
+    '127.0.0.1',
+    'localhost',
+    '172.25.102.116',  # 添加你的 IP 地址
+]
