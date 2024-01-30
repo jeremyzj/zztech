@@ -1,14 +1,20 @@
 <!doctype html>
+
+{% load static %}
+
 <html>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, maximum-scale=1">
 <title>Unique</title>
 <link rel="icon" href="favicon.png" type="image/png">
-<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
-<link href="css/style.css" rel="stylesheet" type="text/css"> 
-<link href="css/font-awesome.css" rel="stylesheet" type="text/css"> 
-<link href="css/animate.css" rel="stylesheet" type="text/css">
+
+
+
+<link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet" type="text/css">
+<link href="{% static 'css/style.css' %}" rel="stylesheet" type="text/css"> 
+<link href="{% static 'css/font-awesome.css' %}" rel="stylesheet" type="text/css"> 
+<link href="{% static 'css/animate.css' %}" rel="stylesheet" type="text/css">
  
 <!--[if lt IE 9]>
     <script src="js/respond-1.1.0.min.js"></script>
@@ -23,7 +29,7 @@
 <header id="header_wrapper">
   <div class="container">
     <div class="header_box">
-      <div class="logo"><a href="#"><img src="img/logo.png" alt="logo"></a></div>
+      <div class="logo"><a href="#"><img src="{% static 'img/logo.png' %}" alt="logo"></a></div>
 	  <nav class="navbar navbar-inverse" role="navigation">
       <div class="navbar-header">
         <button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
@@ -58,7 +64,7 @@
               <a href="#service" class="read_more2">更多</a> </div>
           </div>
           <div>
-			<img src="img/mainImg.png" class="bannerImg zoomIn wow animated" alt="" />
+			<img src="{% static 'img/mainImg.png' %}" class="bannerImg zoomIn wow animated" alt="" />
 		  </div>
         </div>
       </div>
@@ -73,7 +79,7 @@
     <h2>关于我们</h2>
     <div class="inner_section">
 	<div class="row">
-      <div class=" col-lg-4 col-md-4 col-sm-4 col-xs-12 pull-right"><img src="img/about-img.jpg" class="img-circle delay-03s animated wow zoomIn" alt=""></div>
+      <div class=" col-lg-4 col-md-4 col-sm-4 col-xs-12 pull-right"><img src="{% static 'img/about-img.jpg' %}" class="img-circle delay-03s animated wow zoomIn" alt=""></div>
       	<div class=" col-lg-7 col-md-7 col-sm-7 col-xs-12 pull-left">
         	<div class=" delay-01s animated fadeInDown wow animated">
 			<h3>ZZ TECH 是一个为企业提供标准IT智能服务供应商</h3><br/> 
@@ -178,7 +184,7 @@
       
       <!-- Portfolio Item -->
       <div style="position: absolute; left: 0px; top: 0px; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four   appleIOS isotope-item">
-        <div class="portfolio_img"> <img src="img/portfolio_pic1.jpg"  alt="Portfolio 1"> </div>        
+        <div class="portfolio_img"> <img src="{% static 'img/portfolio_pic1.jpg' %}"  alt="Portfolio 1"> </div>        
         <div class="item_overlay">
           <div class="item_info"> 
             <h4 class="project_name">SMS Mobile App</h4>
@@ -189,7 +195,7 @@
       
       <!-- Portfolio Item-->
       <div style="position: absolute; left: 0px; top: 0px; transform: translate3d(337px, 0px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four  design isotope-item">
-        <div class="portfolio_img"> <img src="img/portfolio_pic2.jpg" alt="Portfolio 1"> </div>
+        <div class="portfolio_img"> <img src="{% static 'img/portfolio_pic2.jpg' %}" alt="Portfolio 1"> </div>
         <div class="item_overlay">
           <div class="item_info"> 
             <h4 class="project_name">Finance App</h4>
@@ -200,7 +206,7 @@
       
       <!-- Portfolio Item -->
       <div style="position: absolute; left: 0px; top: 0px; transform: translate3d(674px, 0px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four  design  isotope-item">
-        <div class="portfolio_img"> <img src="img/portfolio_pic3.jpg" alt="Portfolio 1"> </div>
+        <div class="portfolio_img"> <img src="{% static 'img/portfolio_pic3.jpg' %}" alt="Portfolio 1"> </div>
         <div class="item_overlay">
           <div class="item_info"> 
             <h4 class="project_name">GPS Concept</h4>
@@ -211,7 +217,7 @@
       
       <!-- Portfolio Item-->
       <div style="position: absolute; left: 0px; top: 0px; transform: translate3d(1011px, 0px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four  android  prototype web isotope-item">
-        <div class="portfolio_img"> <img src="img/portfolio_pic4.jpg" alt="Portfolio 1"> </div>
+        <div class="portfolio_img"> <img src="{% static 'img/portfolio_pic4.jpg' %}" alt="Portfolio 1"> </div>
         <div class="item_overlay">
           <div class="item_info"> 
             <h4 class="project_name">Shopping</h4>
@@ -222,7 +228,7 @@
       
       <!-- Portfolio Item -->
       <div style="position: absolute; left: 0px; top: 0px; transform: translate3d(0px, 240px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four  design isotope-item">
-        <div class="portfolio_img"> <img src="img/portfolio_pic5.jpg" alt="Portfolio 1"> </div>
+        <div class="portfolio_img"> <img src="{% static 'img/portfolio_pic5.jpg' %}" alt="Portfolio 1"> </div>
         <div class="item_overlay">
           <div class="item_info"> 
             <h4 class="project_name">Managment</h4>
@@ -233,7 +239,7 @@
       
       <!-- Portfolio Item -->
       <div style="position: absolute; left: 0px; top: 0px; transform: translate3d(337px, 240px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four  web isotope-item">
-        <div class="portfolio_img"> <img src="img/portfolio_pic6.jpg" alt="Portfolio 1"> </div>
+        <div class="portfolio_img"> <img src="{% static 'img/portfolio_pic6.jpg' %}" alt="Portfolio 1"> </div>
         <div class="item_overlay">
           <div class="item_info"> 
             <h4 class="project_name">iPhone</h4>
@@ -244,7 +250,7 @@
       
       <!-- Portfolio Item  -->
       <div style="position: absolute; left: 0px; top: 0px; transform: translate3d(674px, 240px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four  design web isotope-item">
-        <div class="portfolio_img"> <img src="img/portfolio_pic7.jpg" alt="Portfolio 1"> </div>       
+        <div class="portfolio_img"> <img src="{% static 'img/portfolio_pic7.jpg' %}" alt="Portfolio 1"> </div>       
         <div class="item_overlay">
           <div class="item_info"> 
             <h4 class="project_name">Nexus Phone</h4>
@@ -255,7 +261,7 @@
       
       <!-- Portfolio Item -->
       <div style="position: absolute; left: 0px; top: 0px; transform: translate3d(1011px, 240px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four   android isotope-item">
-        <div class="portfolio_img"> <img src="img/portfolio_pic8.jpg" alt="Portfolio 1"> </div>       
+        <div class="portfolio_img"> <img src="{% static 'img/portfolio_pic8.jpg' %}" alt="Portfolio 1"> </div>       
         <div class="item_overlay">
           <div class="item_info"> 
 				<h4 class="project_name">Android</h4>
@@ -288,9 +294,9 @@
 <div class="client_logos"><!--client_logos-->
   <div class="container">
     <ul class="fadeInRight animated wow">
-      <li><a href="javascript:void(0)"><img src="img/client_logo1.png" alt=""></a></li>
-      <li><a href="javascript:void(0)"><img src="img/client_logo2.png" alt=""></a></li>
-      <li><a href="javascript:void(0)"><img src="img/client_logo3.png" alt=""></a></li>
+      <li><a href="javascript:void(0)"><img src="{% static 'img/client_logo1.png' %}" alt=""></a></li>
+      <li><a href="javascript:void(0)"><img src="{% static 'img/client_logo2.png' %}" alt=""></a></li>
+      <li><a href="javascript:void(0)"><img src="{% static 'img/client_logo3.png' %}" alt=""></a></li>
       <br/>
       <br/>
       <p>由于我们与客户签署了保密协议，目前在行的项目不便透漏，更多合作敬请期待...</p>
@@ -312,7 +318,7 @@
 								<div class="member-container" data-wow-delay=".1s">
 									<div class="inner-container">
 										<div class="author-avatar">									
-											<img class="img-circle" src="img/ai_team.png" alt="Team Menber">
+											<img class="img-circle" src="{% static 'img/ai_team.png' %}" alt="Team Menber">
 										</div><!-- /.author-avatar -->
 
 										<div class="member-details">
@@ -337,7 +343,7 @@
 								<div class="member-container" data-wow-delay=".3s">
 									<div class="inner-container">
 										<div class="author-avatar">									
-											<img class="img-circle" src="img/app_team.png" alt="Team Menber">
+											<img class="img-circle" src="{% static 'img/app_team.png' %}" alt="Team Menber">
 										</div><!-- /.author-avatar -->
 										<div class="member-details">
 											<div class="member-top">									
@@ -359,7 +365,7 @@
 								<div class="member-container" data-wow-delay=".5s">
 									<div class="inner-container">
 										<div class="author-avatar">									
-											<img class="img-circle" src="img/big_data_team.png" alt="Team Menber">
+											<img class="img-circle" src="{% static 'img/big_data_team.png' %}" alt="Team Menber">
 										</div><!-- /.author-avatar -->
 										<div class="member-details">
 											<div class="member-top">									
@@ -381,7 +387,7 @@
 								<div class="member-container" data-wow-delay=".7s">
 									<div class="inner-container">
 										<div class="author-avatar">									
-											<img class="img-circle" src="img/base_team.png" alt="Team Menber">
+											<img class="img-circle" src="{% static 'img/base_team.png' %}" alt="Team Menber">
 										</div><!-- /.author-avatar -->
 										<div class="member-details">
 											<div class="member-top">									
@@ -441,14 +447,14 @@
   </div>
 </footer>
 
-<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
-<script type="text/javascript" src="js/bootstrap.min.js"></script>
-<script type="text/javascript" src="js/jquery-scrolltofixed.js"></script>
-<script type="text/javascript" src="js/jquery.nav.js"></script> 
-<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
-<script type="text/javascript" src="js/jquery.isotope.js"></script>
-<script type="text/javascript" src="js/wow.js"></script> 
-<script type="text/javascript" src="js/custom.js"></script>
+<script type="text/javascript" src="{% static 'js/jquery-1.11.0.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/bootstrap.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/jquery-scrolltofixed.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/jquery.nav.js' %}"></script> 
+<script type="text/javascript" src="{% static 'js/jquery.easing.1.3.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/jquery.isotope.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/wow.js' %}"></script> 
+<script type="text/javascript" src="{% static 'js/custom.js' %}"></script>
 
 </body>
 </html>
